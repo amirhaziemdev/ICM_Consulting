@@ -10,4 +10,4 @@ Instructions for building this code are as follows:
     python poker-hands.py --filename "poker-hands.txt"
     or in general format, run with
     python poker-hands.py --filename [file-name.txt]
-4. In case of running with different test cases or files, replace [file-name.txt] with your file name
+4. In case of running with different test cases or files, replace [file-name.txt] with your file name.
