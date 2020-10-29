@@ -82,7 +82,7 @@ def decision(p1,p2):
 		winner = "p2"
 	elif check_hand(p1) == check_hand(p2):
 		#gotta break the tie somehow, last resort is return_highest_value
-		print("check_hand results: \np1:{}  p2:{}".format(check_hand(p1),check_hand(p2)))
+		# print("check_hand results: \np1:{}  p2:{}".format(check_hand(p1),check_hand(p2)))
 		if check_hand(p1) == 9: #straight-flush
 			if return_highest_value(p1) > return_highest_value(p2):
 				winner = "p1"
@@ -168,31 +168,31 @@ def read_line(line):
 
 def check_hand(hand):
 	if check_royal_flush(hand):
-		print("royal-flush detected")
+		# print("royal-flush detected")
 		return 10
 	elif check_straight_flush(hand)[0]:
-		print("straight-flush detected")
+		# print("straight-flush detected")
 		return 9
 	elif check_four_kind(hand)[0]:
-		print("four-of-a-kind detected")
+		# print("four-of-a-kind detected")
 		return 8
 	elif check_full_house(hand)[0]:
-		print("full-house detected")
+		# print("full-house detected")
 		return 7
 	elif check_flush(hand)[0]:
-		print("flush detected")
+		# print("flush detected")
 		return 6
 	elif check_straight(hand):
-		print("straight detected")
+		# print("straight detected")
 		return 5
 	elif check_three_kind(hand)[0]:
-		print("three-of-a-kind detected:",check_three_kind(hand)[1])
+		# print("three-of-a-kind detected:",check_three_kind(hand)[1])
 		return 4
 	elif check_two_pairs(hand)[0]:
-		print("two-pairs detected")
+		# print("two-pairs detected")
 		return 3
 	elif check_pair(hand)[0]:
-		print("pair detected: pair of",check_pair(hand)[1])
+		# print("pair detected: pair of",check_pair(hand)[1])
 		return 2
 	else:
 		return 1
