@@ -1,0 +1,4 @@
+Assumptions
+1. Ace can only be high (14) and cannot be used as a low (1)
+2. Royal flush against a royal flush has negligible probability, so we can assume there is no tie-breaker between the two (Tied game)
+3. 
