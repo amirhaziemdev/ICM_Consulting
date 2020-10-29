@@ -10,6 +10,10 @@ import argparse
 from collections import defaultdict
 from itertools import combinations
 
+parser = argparse.ArgumentParser(description= "Poker Hands Programming Exercise")
+parser.add_argument('--filename', default="poker-hands.txt")
+args = parser.parse_args()
+
 values_dict = {"2":2, 
 "3":3, 
 "4":4, 
@@ -42,7 +46,7 @@ def main():
 	tie = 0
 	tied_games = []
 	j = 0 #round number
-	with open("poker-hands.txt") as f:
+	with open(args.filename) as f:
 		for line in f:
 			j+=1
 			[p1, p2] = read_line(line)
